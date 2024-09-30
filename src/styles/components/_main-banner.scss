@@ -1,0 +1,24 @@
+.main-banner {
+   height: calc(90vh - 5.5rem);
+   padding: 1.5rem 5rem;
+   display: flex;
+   align-items: center;
+   position: relative;
+   .banner-box {
+      max-width: 450px;
+      position: absolute;
+      z-index: 1;
+      .moviename {
+         width: 100%;
+      }
+      .description {
+         font-size: 1.2rem;
+         line-height: 1.2;
+         margin: 1rem 0 2rem;
+      }
+      .buttons {
+         display: flex;
+         gap: 1.2rem;
+      }
+   }
+}

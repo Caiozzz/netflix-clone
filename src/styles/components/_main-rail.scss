@@ -1,0 +1,61 @@
+@use '../abstract/variaveis';
+
+.main-rail {
+   margin-bottom: 2rem;
+   position: relative;
+   .title {
+      color: variaveis.$cor-secundaria;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+   }
+
+   .rail {
+      display: flex;
+      gap: .6rem;
+
+      .item {
+         list-style: none;
+         transition: .2s;
+
+         img {
+            width: 100%;
+         }
+
+         &:hover {
+            transform: scale(1.07);
+         }
+      }
+   }
+   
+   &:last-child {
+      .item:nth-of-type(5) {
+         position: relative;
+
+         &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right,
+               rgba(0, 0, 0, 0) 50%,
+               rgba(0, 0, 0, 0.5) 80%,
+               rgba(0, 0, 0, 0.8) 100%);
+         }
+      }
+   }
+
+   .slide {
+      cursor: pointer;
+      color: rgba(255, 255, 255, 0.637);
+      font-size: 1.8rem;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      padding: 0.5rem;
+      transition: .15s;
+      &:hover {
+         color: variaveis.$cor-primaria;
+      }
+   }
+}

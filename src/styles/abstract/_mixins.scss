@@ -1,0 +1,11 @@
+@mixin icon-btn($icon, $background) {
+   content: $icon;
+   display: inline-block;
+   width: 1rem;
+   height: 1rem;
+   background-color: $background;
+   line-height: 1rem;
+   padding: .1rem;
+   text-align: center;
+   margin-right: .2rem;
+}

@@ -1,0 +1,32 @@
+@use '../abstract/variaveis';
+
+.main-navbar {
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+   padding: 1rem 4rem;
+   .logo {
+      max-width: 100px;
+   }
+   .menu {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      list-style: none;
+      .link {
+         color: variaveis.$cor-tercearia;
+      }
+   }
+   .action {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: .8rem;
+      img {
+         max-width: 30px;
+      }
+      .user {
+         border-radius: 2px;
+      }
+   }
+}
